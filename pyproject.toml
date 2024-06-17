@@ -1,0 +1,20 @@
+[project]
+name = "VulnerablePython"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "myc", email = "mycbyte@gmail.com"},
+]
+dependencies = [
+    "flask>=3.0.3",
+    "Flask-SQLAlchemy>=3.1.1",
+    "gunicorn>=22.0.0",
+    "requests>=2.32.3",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
