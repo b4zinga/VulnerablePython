@@ -6,6 +6,9 @@ from app.utils import response
 path_bp = Blueprint("path_traversal", __name__)
 
 
+# 存在漏洞
+# poc:
+# /1?path=/etc/passwd
 @path_bp.get("/1")
 def path1():
     p = request.args.get("path")
